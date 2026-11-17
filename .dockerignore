@@ -1,0 +1,15 @@
+**
+!Dockerfile
+!server/
+!server/*.mjs
+!frontend/
+!frontend/package.json
+!frontend/package-lock.json
+!frontend/*.json
+!frontend/*.ts
+!frontend/*.js
+!frontend/index.html
+!frontend/src/
+!frontend/src/**
+!frontend/public/
+!frontend/public/**

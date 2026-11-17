@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: text-detective
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: TD_PUBLIC_MODE
+        value: "1"
+      - key: TD_DATA_DIR
+        value: /tmp/text-detective-public
+      - key: TD_PROVIDER
+        value: gemini
+      - key: GEMINI_API_KEY
+        sync: false
